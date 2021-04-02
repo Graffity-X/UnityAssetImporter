@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be29f932696ed4fe194f845082b5038e, type: 3}
+  m_Name: CustomImporter
+  m_EditorClassIdentifier: 
+  textureRules:
+  - TargetPath: Assets/Example/Resources/Sprites/UISprite/*
+    PathType: 0
+    textureType: 0
+    textureShape: 0
+    TexturePreset: {fileID: 2655988077585873504, guid: 4dadacb8938524395a0ecdb641eb987a,
+      type: 2}
+  - TargetPath: Assets/Example/Resources/Sprites/*
+    PathType: 0
+    textureType: 0
+    textureShape: 0
+    TexturePreset: {fileID: 2655988077585873504, guid: 3daed31daf3e7471fb0d4863f03b3f60,
+      type: 2}
+  - TargetPath: Assets/Example/Resources/Texture/*
+    PathType: 0
+    textureType: 0
+    textureShape: 0
+    TexturePreset: {fileID: 2655988077585873504, guid: be330cd69a99540d3acd59d1efd16e24,
+      type: 2}
+  audioRules:
+  - TargetPath: Assets/Example/Resources/*
+    PathType: 0
+    AudioPreset: {fileID: 2655988077585873504, guid: 173a1e9d7112d44378011cb96a293a4e,
+      type: 2}
