@@ -3,6 +3,12 @@
 AssetImporter for Unity.
 
 
+# Introduction
+## UnityPackageManager
+1. Open UnityPackageManager Window from tool menu
+2. Select `Add packege from Git URL...`
+3. Enter `https://github.com/Graffity-X/UnityAssetImporter.git?path=AssetImporterProject/Assets/Editor`
+
 # How to Use
 1. Create ConfigFile from ProjectMenu
 	Create→Editor→Config→AssetImporter

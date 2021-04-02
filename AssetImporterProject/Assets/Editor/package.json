@@ -1,0 +1,15 @@
+{
+  "name": "dev.graffity.editor.assetimporter",
+  "displayName": "Graffity.UnityAssetImporter",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "description": "AssetImpoter by using Preset",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Graffity, Inc.",
+    "url": "https://github.com/Graffity-X"
+  },
+  "repository": "https://github.com/Graffity-X/UnityAssetImporter.git",
+  "license": "MIT"
+}
