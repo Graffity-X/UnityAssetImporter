@@ -1,7 +1,7 @@
 {
   "name": "dev.graffity.editor.assetimporter",
   "displayName": "Graffity.UnityAssetImporter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "unity": "2019.4",
   "description": "AssetImpoter by using Preset",
   "dependencies": {
@@ -11,5 +11,16 @@
     "url": "https://github.com/Graffity-X"
   },
   "repository": "https://github.com/Graffity-X/UnityAssetImporter.git",
-  "license": "MIT"
+  "license": "MIT",
+    "keywords": [
+    "workflow",
+    "impoter"
+  ],
+  "samples": [
+    {
+      "displayName": "Sample",
+      "description": "Sample settings of custom importer",
+      "path": "Assets/Example"
+    },
+  ]
 }
