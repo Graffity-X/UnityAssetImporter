@@ -10,6 +10,16 @@
 - explanation. (#issue_number)
 
 -->
+
+# v1.1.1
+## Feature
+- Add License file
+- Add japanese readme
+
+## BugFix
+- Fix json parse error
+
+
 # v1.1.0
 ## Feature
 - Replace Sound Assets to original Assets
