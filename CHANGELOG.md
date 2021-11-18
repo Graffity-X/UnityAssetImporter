@@ -10,6 +10,15 @@
 - explanation. (#issue_number)
 
 -->
+# v1.1.0
+## Feature
+- Replace Sound Assets to original Assets
+- replace manifest.json 
+- Auto detect custom importer setting file
+
+## BugFix
+- No bug fixed 
+
 
 # v1.0.0
 ## Feature
