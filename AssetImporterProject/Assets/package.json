@@ -20,7 +20,7 @@
     {
       "displayName": "Sample",
       "description": "Sample settings of custom importer",
-      "path": "Example"
-    },
+      "path": "Samples~/Example"
+    }
   ]
 }
