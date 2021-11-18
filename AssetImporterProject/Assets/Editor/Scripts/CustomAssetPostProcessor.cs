@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
@@ -7,23 +7,46 @@ namespace Graffity.Editor.AssetImporter
 {
     internal class CustomAssetPostProcessor : UnityEditor.AssetPostprocessor
     {
-        protected ImporterSettings settings = null;
+        static private ImporterSettings settings = null;
+        
 
-        public CustomAssetPostProcessor()
+        private ImporterSettings FindConfigFile()
         {
-            settings = AssetDatabase.LoadAssetAtPath<ImporterSettings>( Path.Combine(Util.ASSET_DIR_PATH, Util.DEFAULT_CONFIG_FILE_NAME));
-            // settings?.AudioRules?.Reverse();
-            // settings?.TextureRules?.Reverse();
-        }
+            var candidates = AssetDatabase.FindAssets("t:ImporterSettings", null);
+            if (candidates == null || candidates.Length < 1)
+            {
+                Debug.LogError("There is No ImporterSettings");
+                return null;
+            }
 
+            var paths = candidates.Select(guid => AssetDatabase.GUIDToAssetPath(guid)).ToArray();
+
+            if (paths.Length != 1)
+            {
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine("There are more than 2 setting files.");
+                sb.AppendLine($"First one (Path:{paths[0]}) will be applied");
+                Debug.LogWarning(sb.ToString());
+            }
+            else
+            {
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine($"Setting File (Path:{paths[0]}) will be applied");
+                Debug.Log(sb.ToString());
+            }
+
+            return AssetDatabase.LoadAssetAtPath<ImporterSettings>(paths[0]);
+        }
 
 
         #region ===== AUDIO =====
 
         public void OnPostprocessAudio(AudioClip clip)
         {
+            if (settings == null) settings = FindConfigFile();  
             if (settings == null)
             {
+                Debug.LogError("There is No ImporterSettings");
                 return;
             }
 
@@ -62,8 +85,10 @@ namespace Graffity.Editor.AssetImporter
 
         public void OnPostprocessTexture(Texture2D texture)
         {
+            if (settings == null) settings = FindConfigFile();  
             if (settings == null)
             {
+                Debug.LogError("There is No ImporterSettings");
                 return;
             }
             foreach (var rule in settings.TextureRules)
