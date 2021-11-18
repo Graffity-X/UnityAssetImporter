@@ -14,13 +14,13 @@
   "license": "MIT",
     "keywords": [
     "workflow",
-    "impoter"
+    "importer"
   ],
   "samples": [
     {
       "displayName": "Sample",
       "description": "Sample settings of custom importer",
-      "path": "Assets/Example"
+      "path": "Example"
     },
   ]
 }
