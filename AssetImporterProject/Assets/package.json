@@ -1,7 +1,7 @@
 {
   "name": "dev.graffity.editor.assetimporter",
   "displayName": "Graffity.UnityAssetImporter",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "unity": "2019.4",
   "description": "AssetImpoter by using Preset",
   "dependencies": {
