@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: CustomImporter
   m_EditorClassIdentifier: 
   textureRules:
-  - TargetPath: Assets/Example/Resources/Sprites/UISprite/*
+  - TargetPath: Assets/Samples/Graffity.UnityAssetImporter/1.1.2/Sample/Resources/Sprites/UISprite/*
     PathType: 0
     textureType: 0
     textureShape: 0
     TexturePreset: {fileID: 2655988077585873504, guid: 4dadacb8938524395a0ecdb641eb987a,
       type: 2}
-  - TargetPath: Assets/Example/Resources/Sprites/*
+  - TargetPath: Assets/Samples/Graffity.UnityAssetImporter/1.1.2/Sample/Resources/Sprites/*
     PathType: 0
     textureType: 0
     textureShape: 0
     TexturePreset: {fileID: 2655988077585873504, guid: 3daed31daf3e7471fb0d4863f03b3f60,
       type: 2}
-  - TargetPath: Assets/Example/Resources/Texture/*
+  - TargetPath: Assets/Samples/Graffity.UnityAssetImporter/1.1.2/Sample/Resources/Textures/*
     PathType: 0
     textureType: 0
     textureShape: 0
     TexturePreset: {fileID: 2655988077585873504, guid: be330cd69a99540d3acd59d1efd16e24,
       type: 2}
   audioRules:
-  - TargetPath: Assets/Example/Resources/Audio/BGM/*
+  - TargetPath: Assets/Samples/Graffity.UnityAssetImporter/1.1.2/Sample/Resources/Audio/BGM/*
     PathType: 0
     AudioPreset: {fileID: 2655988077585873504, guid: 173a1e9d7112d44378011cb96a293a4e,
       type: 2}
-  - TargetPath: Assets/Example/Resources/Audio/SE/*
+  - TargetPath: Assets/Samples/Graffity.UnityAssetImporter/1.1.2/Sample/Resources/Audio/BGM/*
     PathType: 0
     AudioPreset: {fileID: 2655988077585873504, guid: 9c3f1fc054a024f5db08ba4adc0ebe5d,
       type: 2}
