@@ -9,8 +9,8 @@ AssetImporter for Unity.
 
 - [Introduction](#Introduction)
     - [How to add your project](#installation)
-- [How to Use](#usage)
-
+    - [How to Use](#usage)
+- [About Samples](#aboutsamples)
 
 # Introduction
 
@@ -19,7 +19,7 @@ AssetImporter for Unity.
 2. Select `Add packege from Git URL...`
 3. Enter `https://github.com/Graffity-X/UnityAssetImporter.git?path=AssetImporterProject/Assets`
 
-# Usage
+## Usage
 1. Create ConfigFile from ProjectMenu `Create→Editor→Config→AssetImporter`
 <img width="300" alt="01_Create" src="https://user-images.githubusercontent.com/4001760/142399770-f9e8e265-821b-412d-803c-b7162e8d3dee.png">
 
@@ -43,3 +43,13 @@ this tool is effective for adapting preset separately.
 
 
 
+# About Samples
+There are serveral assets which has license individually.<br>
+If you want to know details, please check [License file](/LICENSE.md) 
+
+## Audios
+All audio files are licensed under a `CC4.0`
+
+## Textures
+icon by [defaulticon.com](http://www.defaulticon.com/)<br>
+CC BY-ND 3.0
