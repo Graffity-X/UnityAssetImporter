@@ -10,6 +10,13 @@
 - explanation. (#issue_number)
 
 -->
+# v1.1.2
+## Feature
+- Update license file
+- replace distributable image assets
+
+## BugFix
+- No bug fixed 
 
 # v1.1.1
 ## Feature
